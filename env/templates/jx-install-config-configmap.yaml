@@ -1,0 +1,29 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIICyDCCAbCgAwIBAgIBADANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwprdWJl
+    cm5ldGVzMB4XDTE5MDQyODA1NDMzN1oXDTI5MDQyNTA1NDMzN1owFTETMBEGA1UE
+    AxMKa3ViZXJuZXRlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMLs
+    /5abfOXBoF/UyO4nmpXxMndAbHG/STlO4QrhPRIkZTiYy9cYzDWzf2TQXCDGHiBv
+    N5j5qFQe1IjZXszeQRcK3ajvqP5OweIQnqXivQ77Hg7WaXWUzsN1e4eE9JP/dsAL
+    FaO89b8BCVA1M8BolaJ+AsS2lPDZN3/xmv9hOrkiX63/7rmGl8x76iE3EWWDY/ne
+    LmPnGVWGsbWRo8kv1cwjGjJceTspJGu8ZQUtXMplPPfi4k7KuazttiAJRhrR3UPa
+    44FnUYxKLr/v/yrfchGBpgg+f1hbiMfsgx/DFRDAErPshp5RxTPvBClWEsetgaPS
+    oB4l0u6eImwA3f+WsfUCAwEAAaMjMCEwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB
+    /wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABF6isiWsxbRW4rFJa8RlSC+siQU
+    UT9mUG0XX4j9QoZ1yfVFSXZuJ3FjHMTM+14lgdMNVK3oUX8E2WyVi+cTiTbzd/7q
+    tKZkMBENAEybk6+a03WLwE0QSuvR6cTFg7cTeng9KpHxBp154ZY8m9N7AskB+iIr
+    F/eN385fp9cULNBLyBIUbiaVfb+2jg8BENtqgBt4k4OJKLQW+YDTO44eBLJpn/CO
+    4avyHe2h8YKaCkMYCaO6K/RgmaoT6r9/l5ejmugCb2BflU1IRTlDa9UD78quonsb
+    NBMQyBSGp2mFj06rsN6qGZqpz8T91Lq8lUSyMKGZOlit98D08vI2c1TfIl4=
+    -----END CERTIFICATE-----
+  jx-install-version: 2.0.61
+  kubeProvider: eks
+  secretsLocation: vault
+  server: https://E79DFECC78E350E283DDC3D62F8ABB6C.gr7.us-east-1.eks.amazonaws.com
+  systemVaultName: jx-vault-eks-prod
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
